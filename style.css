@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker|Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.landing-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/553697.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+.page-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+}
+.page-content h1{
+    margin-bottom: 3vh;
+}
+#name{
+    padding: 0.7vh;
+    width: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#name:hover{
+    box-shadow: black 5px 5px 5px;
+}
+#start, #end{
+    width: 400px;
+    margin-top: 2vh;
+    background-color: rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    padding: 1vh;
+}
+#start:hover, #end:hover{
+    background: white;
+    color: black;
+}
+
+#container{
+    display: none;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+#kiri{
+    float: left;
+    width: 40%;
+    height: 75vh;
+    padding: 20px;
+    border: 1px solid white;
+}
+#kiri #konten{
+    padding-top: 22vh;
+}
+#kiri #konten #header{
+    margin-bottom: 3vh;
+}
+#kanan{
+    float: right;
+    width: 50%;
+    height: 80vh;
+    padding: 5px;
+    border: 1px solid white;
+}
+.header h1{
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#player{
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+#kotak{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding-top: 3vh;
+}
+#tombol{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.depan{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: perspective(600px) rotateY(0deg);
+    border: 1px solid black;
+    backface-visibility: hidden;
+    transition: transform 1s linear 0s;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: white;
+    border-radius: 20px;
+    font-size: 70px;
+}
+.depan:hover{
+    box-shadow: black 5px 2px 2px;
+    background-color: transparent;
+}
+#keterangan{
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+#restart{
+    border: 2px solid white;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+#restart:hover{
+    color: white;
+    background-color: transparent;
+}

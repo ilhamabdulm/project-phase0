@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project | Ilham A. Malik</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="landing-page">
+            <div class="page-content">
+                <div id="welcome">
+                    <h1>Welcome fellas! Please insert your name to start!</h1>
+                    <input type="text" name="player" id="name" placeholder="Insert here..." required>
+                    <br>
+                    <a id="start" href='#container' onclick="getName()">Start Game!</a>
+                </div>
+            
+                <div id="container">
+                    <div id="kiri">
+                        <div id="konten">
+                            <div id="player">
+                                    <h1 id="play2"><h1>
+                                </div>
+                            <div class="header">
+                                <h2>Welcome to my Mini Game! Enjoy and Good Luck!</h2>
+                            </div>
+                            <br>
+                            <a id="end" href='#welcome' onclick="closeGame()">HOME</a>
+                        </div>
+                    </div>
+                    <div id="kanan">
+                        <div id="kotak">
+                            <div id="tombol" onclick="kliktombol(1)">
+                                <button id="btn-1D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(2)">
+                                <button id="btn-2D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(3)">
+                                <button id="btn-3D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(4)">
+                                <button id="btn-4D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(5)">
+                                <button id="btn-5D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(6)">
+                                <button id="btn-6D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(7)">
+                                <button id="btn-7D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(8)">
+                                <button id="btn-8D" class="depan"></button>
+                            </div>
+                            <div id="tombol" onclick="kliktombol(9)">
+                                <button id="btn-9D" class="depan"></button>
+                            </div>
+                        </div>
+                        <br>
+                        <h1 id="keterangan"></h1>
+                        <button onclick="restartButton()" id="restart">Restart</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
