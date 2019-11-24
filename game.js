@@ -54,7 +54,10 @@ var empty = 9;
 function comp(x){
     let num = Math.floor(Math.random()*(10-1)+1)
     let ai = document.getElementById('btn-'+num+'D')
-
+    if(empty==0){
+        cekPemenang()
+        gameTie()
+    }
     if(board[num-1]=='' || board[num-1]=='X' || board[num-1]=='O' || num==x){
         comp()
     }else{
@@ -66,10 +69,6 @@ function comp(x){
         board[num-1] = 'O'
         cekPemenang()
         empty--
-    }
-    if(empty==0){
-        cekPemenang()
-        gameTie()
     }
 }
 
